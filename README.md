@@ -3,5 +3,5 @@
 
  Estou aprendendo a criar sites e agora vou gerenciar meus repositórios!
 
-<a href="https://alissonaraujodev.github.io/HTML-CSS/Exercicio/exercicio001">execatar exercicio 001</a>
+<a href="https://alissonaraujodev.github.io/HTML-CSS/Exercicio/exercicio001/index.html">execatar exercicio 001</a>
 
