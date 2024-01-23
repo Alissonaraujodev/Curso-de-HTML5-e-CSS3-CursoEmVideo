@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Document</title>
+    <style>
+        mark{
+            background-color: rgb(137, 212, 212);
+        }
+    </style>
+</head>
+<body>
+    <!--Semantica é quado da sentido e não forma-->
+    <!--tags em vermelho são obsoletas -->
+    <h1>Principais formatações</h1>
+    <h2>Negrito/Destaque</h2>
+    <p>Nessa frase temos um <b>termo em negrito</b> usando a tag B (não semantica)</p>
+    <p>Nessa frase temos um <strong>termo em negrito</strong> usando a tag strong (semantica)</p>
+    Nessa frase temos um <i>termo em italico</i>  usando a tag I (não semantica)</p>
+    <p>Nessa frase temos um <em>termo em italico</em> usando a tag EM (semantica)</p>
+    <h2>Texto marcado</h2>
+    <p>Podemos criar <mark>um texto marcado</mark> usando a tag MARK</p>
+    <p>E no outro parágrafo, temos <mark>outro texto marcado</mark> no final.</p>
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo.</p>
+    <h2>texto deletado</h2>
+    <p>Podemos marcar <del>um texto como excluido</del> para indicar que ele deve ser lido, mas não considerado.</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar <ins>um texto como inserido</ins> para dar ênfase e indicar que ele foi adicionado depois.</p>
+    <p>Exite também o<u> sublinhado </u>como a tag U(não semantica)</p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do x <sup>20</sup> +3</p>
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo H <sub>2</sub>O</p>
+    <h1>Outras formatoções</h1>
+    <h2>Códogo-fonte</h2>
+    <p>O comando <code>document.getElementById(""teste)</code> é escrito línguagem JavaScript </p>
+    <pre>
+        <code>
+    num = int(input('digite um número'))
+    if num% 2 == 0:
+        print(f'O número {num} é PAR')
+    else:
+        print(f'O número é ÌMPAR') 
+    pront('Fim do programa')
+        </code>
+    </pre>
+    <h2>Citações</h2>
+    <p>Como diria o pai de um amigo: <q>O computador é um burro rápido</q></p>
+    <h2>Citações completas</h2>
+    <p>Segundo Jeff Noble, no seu livre HTML para leigos:</p>
+    <blockquote cite="link do livr==semantica">
+        A diferença wntre elementos inline e um bloco de texto é importante. Os elementos HTML nesse capítulo descrevem od blocos de texto
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou aprendendo <abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. estou adorando</p>
+    <p><bdo dir="rtl">Estou aprendendo HTML e CSS</bdo></p>
+
+    
+    
+</body>
+</html>
