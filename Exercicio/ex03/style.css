@@ -1,99 +1,98 @@
 @charset "UTF-8";
 @font-face {
-    font-family: idroid;
+    font-family: 'Android';
     src: url("fontes/idroid.otf")format('opentype');
     font-weight: normal;
     font-style: normal;
 }
-body{
-    background-color: rgba(139, 250, 154, 0.788);
-    font-family: Arial, Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+:root{
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+    
+    --fonte-padrao: arial, verdana, helvetica,sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+}
+*{
     margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color:var(--cor0);
+    font-family: var(--fonte-padrao);
 }
 header{
-    background-image:linear-gradient(to top,rgba(1, 26, 1, 0.541),rgba(116, 233, 116, 0.726)) ;
-    color: white;
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 150px;
     text-align: center; 
-    height: 150px; 
-    padding-top: 5px;
+    padding-top: 30px;   
 }
-header>p{
-    text-align: center;
-    
-}
-a{
-    text-decoration: none;
-    color: rgb(241, 241, 241);
-    padding-right: 20px;   
-} 
-nav{
-    text-align: left;
-    padding-left: 10px;
-}
-section{
-    width:700px;
-    margin: auto;
-    background-color: rgb(255, 255, 255);
-    padding: 10px;
-    box-shadow: 0px 3px 8px 3px rgba(0, 0, 0, 0.459);
-}
-article>h1{
-    color: rgb(2, 92, 2);
-    font-family: idroid, Arial, Helvetica, sans-serif;
-    font-size: 28px;
-}
-article>h2{
-    background-image:linear-gradient(to right,rgba(31, 163, 31, 0.541),rgba(253, 253, 253)) ;
+header > h1{
     color: white;
-    color: rgb(2, 92, 2);
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    margin-bottom: 20px;   
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.39);
+}
+header > p{
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    color: white;
+    max-width: 500px;
+    margin: auto;
     padding-left: 10px;
-    font-family: idroid, Arial, Helvetica, sans-serif;
-    font-size: 23px;
+    padding-right: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.192);
 }
-p{
-    text-align: justify;
-    text-indent: 30px;
-}
-#bugdroid{
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-}
-#video{
-    background-color:  rgb(2, 92, 2);;
-}
-section.lista{
-    margin-bottom: 10px;
-    border-radius: 0px 0px 10px 10px;
-}
-article.lista{
-    background-color: rgba(139, 250, 154, 0.788) ;
+nav{
+    background-color: var(--cor5);
     padding: 10px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.521);
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.308);
 }
-    
-h3{
-    background-color: rgba(20, 136, 20, 0.521);
-    color: #fff;
-    padding-left: 10px;
-    padding-top: 10px;
-    margin-top: -10px;
-    margin-left: -10px;
-    margin-right: -10px;
-    border-top-left-radius:10px ;
-    border-top-right-radius:10px;
-    height: 30px;
+nav > a{
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
 }
-container{
-     display: grid;
-     width: 550px;
-     grid-template-columns: 350px 1fr;
+nav>a:hover{
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;   
+}
+main h1{
+    color:var(--cor5);
+    font-family: var(--fonte-android);
+}
+main h2{
+    font-family: var(--fonte-android);
+}
+main img{
+    width: 100%;
+}
+main img.pequena{
+    max-width:350px;
+    display: block;
+    margin: auto;
 }
 footer{
-    text-align: center;
-    color: #fff;
-    background-color:rgb(0, 68, 0);
-}.imagens{
-    width: 700px;
+    background-color: var(--cor5);
+    color: white;
 }
