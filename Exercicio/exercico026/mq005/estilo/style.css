@@ -15,8 +15,20 @@ header>h1{
     padding: 10px;
     text-align: center;
 }
-menu{
+#burger{
+    background-color: rgba(0, 0, 0, 0.527);
+    color: white;
     display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+span#burger:hover{
+    background-color: white;
+    color: black;
+}
+menu{
+    display: none;
 }
 menu>ul{
     list-style-type: none;
